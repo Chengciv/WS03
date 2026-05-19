@@ -172,13 +172,6 @@ footer,
   background-color: var(--color-page-bg) !important;
 }
 
-
-/* ----------------------------------------------------------------
-   ADVANCED ZONE — Para sa gustong mag-explore pa!
-   ----------------------------------------------------------------
-   Alisin ang /* at */ para i-activate ang isang rule.
-   ---------------------------------------------------------------- */
-
 /* Hover effect sa mga link */
 /* a:hover {
   text-decoration: underline;

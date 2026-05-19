@@ -1,0 +1,16 @@
+{
+    "name": "chengciv/ws03",
+    "description": "Job seeker application",
+    "authors": [
+        {
+            "name": "Vic Lendrew Cheng",
+            "email": "183092900+Chengciv@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "framework/",
+            "App\\": "app/"
+        }
+    }
+}

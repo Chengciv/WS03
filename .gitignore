@@ -3,4 +3,4 @@
 /config/db.php
 .env
 .vscode
-Thumbs.db
+.DS_Store

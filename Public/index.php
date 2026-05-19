@@ -1,20 +1,24 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
-require_once '../helpers.php';
-require basePath('Framework/Router.php');
-require basePath('Framework/Database.php');
+require __DIR__ . '/../helpers.php';          // ← ADD THIS FIRST
+require __DIR__ . '/../vendor/autoload.php';
 
-//Instatiate the router
+use Framework\Router;
+use Framework\Database;
+
+// Instantiate the router
 $router = new Router();
 
-//Get routes
+// Get routes
 $routes = require basePath('routes.php');
 
-//Get current URI and HTTP method
-$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); //Uniform resource identifier
-$method = $_SERVER ['REQUEST_METHOD'];
+// Get current URI and HTTP method
+$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$method = $_SERVER['REQUEST_METHOD'];
 
-//Route the request
+// Route the request
 $router->route($uri, $method);
 
 //$routes = [

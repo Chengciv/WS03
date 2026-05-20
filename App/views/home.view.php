@@ -1,7 +1,7 @@
-<?php loadPartials('head'); ?>
-<?php loadPartials('navbar'); ?>
-<?php loadPartials('showcase-search'); ?>
-<?php loadPartials('top-banner'); ?>
+<?= loadPartials('head'); ?>
+<?= loadPartials('navbar'); ?>
+<?= loadPartials('showcase-search'); ?>
+<?= loadPartials('top-banner'); ?>
 
 <!-- Job Listings -->
 <section>
@@ -43,5 +43,5 @@
     </div>
 </section>
 
-<?php loadPartials('bottom-banner'); ?>
-<?php loadPartials('footer'); ?>
+<?= loadPartials('bottom-banner'); ?>
+<?= loadPartials('footer'); ?>

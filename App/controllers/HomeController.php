@@ -18,8 +18,8 @@ class HomeController
 
     public function index()
     {
-        $listings = $this->db->query(  // ← $this->db not $this->$db
-            'SELECT * FROM listings LIMIT 6'
+        $listings = $this->db->query(
+            'SELECT * FROM listings ORDER BY created_at DESC LIMIT 6'
         )->fetchAll(PDO::FETCH_OBJ);
 
         loadView('home', ['listings' => $listings]);
